@@ -1,4 +1,4 @@
 .DS_Store
-# /IP.egg-info
-# /build
-# /IP/__pycache__
+/BriefFunction.egg-info
+/build
+# /BriefFunction/__pycache__
