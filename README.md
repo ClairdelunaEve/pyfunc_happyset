@@ -1,4 +1,4 @@
-# Python-BriefFunction
+# pyfunc_happyset
 <img src="https://img.shields.io/badge/-Python-000.svg?logo=python&style=popout">
 
 ## Overview
