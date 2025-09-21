@@ -1,4 +1,5 @@
 .DS_Store
 /happyset.egg-info
 /build
+/dist
 # /happyset/__pycache__
