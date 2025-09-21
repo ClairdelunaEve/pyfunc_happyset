@@ -1,6 +1,6 @@
 import os
 import shutil
-from DirFile import *
+from happyset.DirFile import *
 
 # Write
 def Write_a_1dlist(filepath,writelist,delimiter):

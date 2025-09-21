@@ -1,5 +1,5 @@
 [project]
-name = "BriefFunction"
+name = "happyset"
 version = '1.0.0'
 authors = [  { name="Nao Yamanouchi" },]
 description = "Frequently used processes are made into functions"
