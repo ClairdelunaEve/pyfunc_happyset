@@ -5,7 +5,9 @@ from pathlib import Path
 # Clear
 def Clear_dir(path :str|Path) -> None:
     shutil.rmtree(path)
-    os.mkdir(path)
+    if type(path) is str:
+        path = Path(path)
+    path.mkdir()
     
 def Clear_file(path :str|Path) -> None:
     with open(path, "r+") as f:

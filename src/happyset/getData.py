@@ -9,7 +9,7 @@ def Get_csv2List(path):
     return data
 
 # text
-def Get_text2list(path,delimiter):
+def Get_text2list(path, delimiter):
     with open(path, 'r') as f:
         return f.read().split(delimiter)
 
