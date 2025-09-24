@@ -8,6 +8,7 @@ version = '1.1.1'
 authors = [  { name="Nao Yamanouchi" },]
 description = "Frequently used processes are made into functions"
 license = {text = "3-Clause BSD License"}
+readme = "README.md"
 requires-python = ">=3.10.5"
 dependencies = [
     "sudachipy >=0.6",
