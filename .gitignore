@@ -2,4 +2,5 @@
 /happyset.egg-info
 /build
 /dist
+/test
 # /happyset/__pycache__
