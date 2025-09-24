@@ -4,7 +4,6 @@ build-backend = "flit_core.buildapi"
 
 [project]
 name = "happyset"
-version = '1.0.0'
 authors = [  { name="Nao Yamanouchi" },]
 description = "Frequently used processes are made into functions"
 license = {text = "3-Clause BSD License"}
