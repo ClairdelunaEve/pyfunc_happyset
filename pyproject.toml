@@ -4,7 +4,7 @@ build-backend = "flit_core.buildapi"
 
 [project]
 name = "happyset"
-version = '1.1.0'
+version = '1.1.1'
 authors = [  { name="Nao Yamanouchi" },]
 description = "Frequently used processes are made into functions"
 license = {text = "3-Clause BSD License"}
@@ -18,3 +18,7 @@ dependencies = [
     "opencv-python >=4.12",
     "qrcode >=8.0"
 ]
+
+[project.urls]
+Source = "https://github.com/ClairdelunaEve/pyfunc_happyset.git"
+Issues = "https://github.com/ClairdelunaEve/pyfunc_happyset/issues"
