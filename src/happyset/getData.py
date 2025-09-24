@@ -1,28 +1,34 @@
 import csv
-import os
+from pathlib import Path
 
 # csv
-def Get_csv2List(path):
+def Get_csv2List(path :str|Path) -> list:
     with open(path, 'r') as csvfile:
         reader = csv.reader(csvfile)
         data = [data for data in reader]
     return data
 
 # text
-def Get_text2list(path, delimiter):
+def Get_text2list(path :str|Path, delimiter :str) -> list:
     with open(path, 'r') as f:
         return f.read().split(delimiter)
 
 # directory
-def Get_dirList(path):
-    return sorted([f for f in os.listdir(path) if os.path.isdir(os.path.join(path, f))])
+def Get_dirList(path :str|Path) -> list:
+    if type(path) is str:
+        path = Path(path)
+    return sorted([str(f) for f in path.iterdir() if (path/f).is_dir()])
 
 # file
-def Get_fileList(path):
-    return sorted([f for f in os.listdir(path) if os.path.isfile(os.path.join(path, f)) and (not f.startswith("."))])
+def Get_fileList(path :str|Path) -> list:
+    if type(path) is str:
+        path = Path(path)
+    return sorted([f for f in path.iterdir() if (path/f).is_file() and (not str(f).startswith("."))])
 
-def Get_filepathList(path):
-    return sorted([os.path.join(path, f) for f in os.listdir(path) if os.path.isfile(os.path.join(path, f)) and (not f.startswith("."))])
+def Get_filepathList(path :str|Path):
+    if type(path) is str:
+        path = Path(path)
+    return sorted([str((path/f).absolute()) for f in path.iterdir() if (path/f).is_file() and (not str(f).startswith("."))])
 
 def Get_uniqueList(targetList):
     return sorted(filter(lambda a: a != '',list(set(targetList))))
