@@ -6,7 +6,7 @@ from happyset.DirFile import *
 def Write_a_1dlist(filepath,writelist,delimiter):
     writelist = [str(i) for i in writelist]
     with open(filepath,'a') as f:
-        f.write(delimiter.join(writelist))
+        f.write(delimiter.join(writelist)+"\n")
 
 def Write_a_2dlist(filepath,writelist,delimiter):
     for row in writelist:
