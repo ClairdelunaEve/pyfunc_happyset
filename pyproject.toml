@@ -4,7 +4,7 @@ build-backend = "flit_core.buildapi"
 
 [project]
 name = "happyset"
-version = '1.1.4'
+version = '1.2.0'
 authors = [  { name="Nao Yamanouchi" },]
 description = "Frequently used processes are made into functions"
 license = {text = "3-Clause BSD License"}
@@ -17,7 +17,8 @@ dependencies = [
     "mecab >=0.996",
     "unidic >=1.1",
     "opencv-python >=4.12",
-    "qrcode >=8.0"
+    "qrcode >=8.0",
+    "scipy >=1.16"
 ]
 
 [project.urls]
